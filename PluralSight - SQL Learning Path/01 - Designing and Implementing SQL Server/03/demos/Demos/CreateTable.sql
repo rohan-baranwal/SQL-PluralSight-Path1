@@ -17,6 +17,6 @@ CREATE TABLE Orders.OrderTracking (
     IsExpedited bit NOT NULL,
     TotalPrice AS (Quantity * UnitPrice * (1.0 - Discount)), -- PERSISTED
 ) 
-ON BobsData 
+-- ON BobsData 
 WITH (DATA_COMPRESSION = PAGE);
 GO
